@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <title>Nosotros - TechStyle</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#100F13]">      <div class="relative flex size-full min-h-screen flex-col text-white group/design-root overflow-x-hidden" style="font-family: 'Ubuntu', sans-serif;">
+        <!-- Header igual que en coleccion.html -->
+        <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between whitespace-nowrap px-10 py-4 bg-black/50 backdrop-blur-xl">
+            <div class="flex items-center gap-3 text-white">
+                <span class="material-symbols-outlined text-[var(--neon-pink)] text-3xl">phonelink_setup</span>
+                <h2 class="text-white text-2xl font-bold" style="font-family: 'Orbitron', sans-serif;">TechStyle</h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-lg">
+                <a class="hover:text-[var(--neon-pink)] transition-colors" href="index.html">Inicio</a>
+                <a class="hover:text-[var(--neon-pink)] transition-colors" href="coleccion.html">Colección</a>
+                <a class="hover:text-[var(--neon-pink)] transition-colors" href="nosotros.html">Nosotros</a>
+                <a class="hover:text-[var(--neon-pink)] transition-colors" href="contacto.html">Contacto</a>
+            </nav>
+            <button class="md:hidden p-2 rounded-full hover:bg-white/20 transition-colors">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </header>        <main class="flex-grow pt-20">
+            <section class="nosotros-section-with-bg relative py-20 px-4 md:px-10">
+                <div class="absolute top-0 left-0 w-full h-full opacity-10" style="background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);"></div>
+                <div class="max-w-4xl mx-auto relative">                    <h1 class="text-5xl md:text-6xl font-bold mb-12 text-center" style="font-family: 'Orbitron', sans-serif;">
+                        Sobre Nosotros
+                    </h1>
+                    <div class="space-y-8 text-lg">
+                        <p>
+                            En TechStyle, fusionamos la tecnología con el diseño para crear accesorios que no solo protegen tus dispositivos, sino que también reflejan tu estilo personal.
+                        </p>
+                        <p>
+                            Nuestra misión es proporcionar productos de alta calidad que combinen funcionalidad y estética, permitiéndote expresar tu individualidad a través de tus accesorios tecnológicos.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                            <div class="bg-white/5 p-6 rounded-lg backdrop-blur-sm">
+                                <span class="material-symbols-outlined text-4xl text-[var(--neon-pink)]">design_services</span>
+                                <h3 class="text-xl font-bold mt-4 mb-2">Diseño Innovador</h3>
+                                <p class="text-white/70">Creamos diseños únicos que combinan estética y funcionalidad.</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-lg backdrop-blur-sm">
+                                <span class="material-symbols-outlined text-4xl text-[var(--neon-pink)]">verified</span>
+                                <h3 class="text-xl font-bold mt-4 mb-2">Calidad Premium</h3>
+                                <p class="text-white/70">Utilizamos materiales de primera calidad en todos nuestros productos.</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-lg backdrop-blur-sm">
+                                <span class="material-symbols-outlined text-4xl text-[var(--neon-pink)]">eco</span>
+                                <h3 class="text-xl font-bold mt-4 mb-2">Compromiso Verde</h3>
+                                <p class="text-white/70">Comprometidos con prácticas sostenibles y materiales eco-friendly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer igual que en coleccion.html -->
+        <footer class="bg-[#100F13] py-10 px-4 md:px-10 border-t border-white/10">
+            <div class="max-w-7xl mx-auto">
+                <p class="text-center text-white/50">&copy; 2025 TechStyle. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

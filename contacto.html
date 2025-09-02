@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <title>Contacto - TechStyle</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#100F13]">      <div class="relative flex size-full min-h-screen flex-col text-white group/design-root overflow-x-hidden" style="font-family: 'Ubuntu', sans-serif;">
+        <!-- Header -->
+        <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between whitespace-nowrap px-10 py-4 bg-black/50 backdrop-blur-xl">
+            <div class="flex items-center gap-3 text-white">
+                <span class="material-symbols-outlined text-[var(--neon-pink)] text-3xl">phonelink_setup</span>
+                <h2 class="text-white text-2xl font-bold" style="font-family: 'Orbitron', sans-serif;">TechStyle</h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-lg">
+                <a class="hover:text-[var(--neon-pink)] transition-colors" href="index.html">Inicio</a>
+                <a class="hover:text-[var(--neon-pink)] transition-colors" href="coleccion.html">Colección</a>
+                <a class="hover:text-[var(--neon-pink)] transition-colors" href="nosotros.html">Nosotros</a>
+                <a class="hover:text-[var(--neon-pink)] transition-colors" href="contacto.html">Contacto</a>
+            </nav>
+            <button class="md:hidden p-2 rounded-full hover:bg-white/20 transition-colors">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </header>
+ 
+        <main class="flex-grow pt-20">
+            <section class="relative py-20 px-4 md:px-10 bg-[#100F13]">
+                <div class="absolute top-0 left-0 w-full h-full opacity-10" style="background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);"></div>
+                <div class="max-w-4xl mx-auto relative">                    <h1 class="text-5xl md:text-6xl font-bold mb-12 text-center" style="font-family: 'Orbitron', sans-serif;">
+                        Contáctanos
+                    </h1>
+                   
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <!-- Información de contacto -->
+                        <div class="bg-white/5 p-8 rounded-lg backdrop-blur-sm">
+                            <h2 class="text-2xl font-bold mb-6">Información de Contacto</h2>
+                            <div class="space-y-6">
+                                <div class="flex items-center gap-4">
+                                    <span class="material-symbols-outlined text-[var(--neon-pink)]">mail</span>
+                                    <p>techstyle336@gmail.com</p>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <span class="material-symbols-outlined text-[var(--neon-pink)]">phone</span>
+                                    <p>+57 3014706386</p>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <span class="material-symbols-outlined text-[var(--neon-pink)]">location_on</span>
+                                    <p>Cra 61b #70-110, Barranquilla</p>
+                                </div>
+                            </div>
+                        </div>
+ 
+                        <!-- Redes Sociales -->
+                        <div class="bg-white/5 p-8 rounded-lg backdrop-blur-sm">
+                            <h2 class="text-2xl font-bold mb-6">Síguenos</h2>
+                            <div class="space-y-6">
+                                <a href="#" class="flex items-center gap-4 hover:text-[var(--neon-pink)] transition-colors">
+                                    <span class="material-symbols-outlined">language</span>
+                                    <p>~~~~~~~~</p>
+                                </a>
+                                <a href="#" class="flex items-center gap-4 hover:text-[var(--neon-pink)] transition-colors">
+                                    <span class="material-symbols-outlined">photo_camera</span>
+                                    <p>techs_tyle366</p>
+                                </a>
+                                <a href="#" class="flex items-center gap-4 hover:text-[var(--neon-pink)] transition-colors">
+                                    <span class="material-symbols-outlined">chat</span>
+                                    <p>@TechStyleOficial</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+ 
+        <!-- Footer -->
+        <footer class="bg-[#100F13] py-10 px-4 md:px-10 border-t border-white/10">
+            <div class="max-w-7xl mx-auto">
+                <p class="text-center text-white/50">&copy; 2025 TechStyle. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

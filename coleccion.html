@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <title>Colección - TechStyle</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#100F13]">      <div class="relative flex size-full min-h-screen flex-col text-white group/design-root overflow-x-hidden" style="font-family: 'Ubuntu', sans-serif;">
+        <!-- Header -->
+        <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between whitespace-nowrap px-10 py-4 bg-black/50 backdrop-blur-xl">
+            <div class="flex items-center gap-3 text-white">
+                <span class="material-symbols-outlined text-[var(--neon-pink)] text-3xl">phonelink_setup</span>
+                <h2 class="text-white text-2xl font-bold" style="font-family: 'Orbitron', sans-serif;">TechStyle</h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-lg">
+                <a class="hover:text-[var(--neon-pink)] transition-colors" href="index.html">Inicio</a>
+                <a class="hover:text-[var(--neon-pink)] transition-colors" href="coleccion.html">Colección</a>
+                <a class="hover:text-[var(--neon-pink)] transition-colors" href="nosotros.html">Nosotros</a>
+                <a class="hover:text-[var(--neon-pink)] transition-colors" href="contacto.html">Contacto</a>
+            </nav>
+            <button class="md:hidden p-2 rounded-full hover:bg-white/20 transition-colors">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </header>
+
+        <main class="flex-grow pt-20">            <!-- Hero Section -->
+            <section class="coleccion-section-with-bg py-20 px-4 md:px-10 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-full opacity-10" style="background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);"></div>                <h1 class="text-center text-5xl md:text-6xl font-bold mb-12">
+                    Nuestra Colección Completa
+                </h1>
+                
+                <!-- Grid de productos -->
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+                    <!-- Producto 1 -->
+                    <div class="product-card group bg-[#1A1D1F] rounded-lg shadow-lg">
+                        <div class="product-image rounded-t-lg" style='background-image: url("img/airpodscorazon.webp"); background-size: cover; background-position: center;'></div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold" style="font-family: 'Exo 2', sans-serif;">Funda Minimalista Corazon</h3>
+                            <p class="text-white/70 mt-2">Diseño elegante y delgado para una protección sofisticada.</p>
+                            <button class="cta-button mt-4 text-sm" onclick="openModal(this.parentElement.previousElementSibling.style.backgroundImage.slice(5, -2))">
+                                <span class="truncate">Ver detalles</span>
+                            </button>
+                        </div>
+                    </div>                    <!-- Producto 2 -->
+                    <div class="product-card group bg-[#1A1D1F] rounded-lg shadow-lg">
+                        <div class="product-image rounded-t-lg" style='background-image: url("img/Cargador-perro.webp"); background-size: cover; background-position: center;'></div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold" style="font-family: 'Exo 2', sans-serif;">Cargador perzonalizado perrito</h3>
+                            <p class="text-white/70 mt-2">Cargar tu telefono a un estilo propio.</p>
+                            <button class="cta-button mt-4 text-sm" onclick="openModal(this.parentElement.previousElementSibling.style.backgroundImage.slice(5, -2))">
+                                <span class="truncate">Ver detalles</span>
+                            </button>
+                        </div>
+                    </div>                    <!-- Producto 3 -->
+                    <div class="product-card group bg-[#1A1D1F] rounded-lg shadow-lg">
+                        <div class="product-image rounded-t-lg" style='background-image: url("img/base_celular.webp"); background-size: cover; background-position: center;'></div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold" style="font-family: 'Exo 2', sans-serif;">Base de telefono Customs</h3>
+                            <p class="text-white/70 mt-2">Base minimalista y elegante para soportar tu telefono.</p>
+                            <button class="cta-button mt-4 text-sm" onclick="openModal(this.parentElement.previousElementSibling.style.backgroundImage.slice(5, -2))">
+                                <span class="truncate">Ver detalles</span>
+                            </button>
+                        </div>
+                    </div>                    <!-- Producto 4 -->
+                    <div class="product-card group bg-[#1A1D1F] rounded-lg shadow-lg">
+                        <div class="product-image rounded-t-lg" style='background-image: url("img/Forro-pato.webp"); background-size: cover; background-position: center;'></div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold" style="font-family: 'Exo 2', sans-serif;">Proteccion telefono pato</h3>
+                            <p class="text-white/70 mt-2">Forro adorable pintado a mano para proteger tu telefono.</p>
+                            <button class="cta-button mt-4 text-sm" onclick="openModal(this.parentElement.previousElementSibling.style.backgroundImage.slice(5, -2))">
+                                <span class="truncate">Ver detalles</span>
+                            </button>
+                        </div>
+                    </div>                    <!-- Producto 5 -->
+                    <div class="product-card group bg-[#1A1D1F] rounded-lg shadow-lg">
+                        <div class="product-image rounded-t-lg" style='background-image: url("img/reloj (1).webp"); background-size: cover; background-position: center;'></div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold" style="font-family: 'Exo 2', sans-serif;">Reloj custom retro</h3>
+                            <p class="text-white/70 mt-2">Reloj al mas estilo informatica del pasado.</p>
+                            <button class="cta-button mt-4 text-sm" onclick="openModal(this.parentElement.previousElementSibling.style.backgroundImage.slice(5, -2))">
+                                <span class="truncate">Ver detalles</span>
+                            </button>
+                        </div>
+                    </div>                    <!-- Producto 6 -->
+                    <div class="product-card group bg-[#1A1D1F] rounded-lg shadow-lg">
+                        <div class="product-image rounded-t-lg" style='background-image: url("img/Udifonos-2.webp"); background-size: cover; background-position: center;'></div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold" style="font-family: 'Exo 2', sans-serif;">Audifonos bluetooh</h3>
+                            <p class="text-white/70 mt-2">Disfruta la muscia con un estilo superior con figuras personalizadas.</p>
+                            <button class="cta-button mt-4 text-sm" onclick="openModal(this.parentElement.previousElementSibling.style.backgroundImage.slice(5, -2))">
+                                <span class="truncate">Ver detalles</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Producto 7 -->
+                    <div class="product-card group bg-[#1A1D1F] rounded-lg shadow-lg">
+                        <div class="product-image rounded-t-lg" style='background-image: url("img/estuche-cable.webp"); background-size: cover; background-position: center;'></div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold" style="font-family: 'Exo 2', sans-serif;">Estuche para cables: version pan</h3>
+                            <p class="text-white/70 mt-2">¿Acaso una rebanada de pan puede ser tan linda y funcional?.</p>
+                            <button class="cta-button mt-4 text-sm" onclick="openModal(this.parentElement.previousElementSibling.style.backgroundImage.slice(5, -2))">
+                                <span class="truncate">Ver detalles</span>
+                            </button>
+                        </div>
+                    </div>      
+
+                    <!-- Producto 8 -->
+                    <div class="product-card group bg-[#1A1D1F] rounded-lg shadow-lg">
+                        <div class="product-image rounded-t-lg" style='background-image: url("img/funda-ojo.webp"); background-size: cover; background-position: center;'></div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold" style="font-family: 'Exo 2', sans-serif;">Funda de telefono dark</h3>
+                            <p class="text-white/70 mt-2">Un diseño digno de salir en una pesadilla.</p>
+                            <button class="cta-button mt-4 text-sm" onclick="openModal(this.parentElement.previousElementSibling.style.backgroundImage.slice(5, -2))">
+                                <span class="truncate">Ver detalles</span>
+                            </button>
+                        </div>
+                    </div>      
+
+                    <!-- Producto 9 -->
+                    <div class="product-card group bg-[#1A1D1F] rounded-lg shadow-lg">
+                        <div class="product-image rounded-t-lg" style='background-image: url("img/RUPELIK-20W_18W-iPhone-USB-C-Power-Adapter-Charger-Case-Cover-Cartoon-Design-_Warrier_-Cable-Protect.webp"); background-size: cover; background-position: center;'></div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold" style="font-family: 'Exo 2', sans-serif;">Cargador Telefono edicion especial: Darth Vader</h3>
+                            <p class="text-white/70 mt-2">Carga rápida pero debes aceptar el lado oscuro en tu corazon.</p>
+                            <button class="cta-button mt-4 text-sm" onclick="openModal(this.parentElement.previousElementSibling.style.backgroundImage.slice(5, -2))">
+                                <span class="truncate">Ver detalles</span>
+                            </button>
+                        </div>
+                    </div>      
+
+                    <!-- Producto 10 -->
+                    <div class="product-card group bg-[#1A1D1F] rounded-lg shadow-lg">
+                        <div class="product-image rounded-t-lg" style='background-image: url("img/feminineboy_z.webp"); background-size: cover; background-position: center;'></div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold" style="font-family: 'Exo 2', sans-serif;">Audifonos bluetooh edicion espacial</h3>
+                            <p class="text-white/70 mt-2">Deja que la musica te transporte a otro universo con estilo.</p>
+                            <button class="cta-button mt-4 text-sm" onclick="openModal(this.parentElement.previousElementSibling.style.backgroundImage.slice(5, -2))">
+                                <span class="truncate">Ver detalles</span>
+                            </button>
+                        </div>
+                    </div>                      
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-[#100F13] py-10 px-4 md:px-10 border-t border-white/10">
+            <div class="max-w-7xl mx-auto">
+                <p class="text-center text-white/50">&copy; 2025 TechStyle. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+        <!-- Modal para imágenes -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+          <img id="modalImage" class="modal-content">
+        </div>
+    </div>
+
+    <script>
+    function openModal(imageSrc) {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+      modal.style.display = "block";
+      modalImg.src = imageSrc;
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+
+    // Cerrar modal con la tecla ESC
+    document.addEventListener('keydown', function(event) {
+      if (event.key === "Escape") {
+        closeModal();
+      }
+    });
+    </script>
+</body>
+</html>
